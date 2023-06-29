@@ -1,4 +1,4 @@
-import { KEY } from "./API_KEY";
+import { KEY } from "./API_KEY.js";
 
 let weather = {
     "apiKey": KEY,
@@ -13,13 +13,13 @@ let weather = {
     },
 
     displayWeather: function (data) {
-        const { name } = data;
+        const { name: city } = data;
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         //console.log(name, icon, description, temp, humidity, speed);
 
-        document.querySelector(".city").innerText = "Weather in " + name;
+        document.querySelector(".city").innerText = "Weather in " + city;
         document.querySelector(".icon").src = 
             "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").innerText = description;
@@ -44,4 +44,5 @@ document.querySelector(".search-bar").addEventListener("keyup", function (event)
 })
 
 weather.fetchWeather("Mesa");
+console.log(KEY)
 
