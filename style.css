@@ -11,7 +11,8 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #222;
-    background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+    /* background-image: url("https://source.unsplash.com/1600x900/?nature,water"); */
+    background-image: url(./weather.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Ysabeau SC', sans-serif;
