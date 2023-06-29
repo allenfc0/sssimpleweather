@@ -19,5 +19,5 @@
 
 [Check out the Weather Application](https://sssimpleweather.surge.sh)
 
-![screenshot](app.png)
+![screenshot](./app.png)
 
